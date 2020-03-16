@@ -1,4 +1,4 @@
-import {Product} from './Product'
+import { Product } from './Product';
 export const data : Product[] = [
   {
     id: 1,
@@ -12,4 +12,4 @@ export const data : Product[] = [
     price: 25.99,
     desc: "Mo ta san pham"
   }
-];
+]
