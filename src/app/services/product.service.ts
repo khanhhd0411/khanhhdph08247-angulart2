@@ -9,6 +9,15 @@ export class ProductService {
     return this.products;
   }
   removeProducts(id) {
-    return this.products = this.products.filter(product => product.id != id);
+    return (this.products = this.products.filter(product => product.id != id));
+  }
+  addProduct(product) {
+    console.log(product);
+
+    let newObj = { ...product };
+    console.log(newObj);
+
+    this.products.push(newObj);
+    console.log(this.products);
   }
 }
